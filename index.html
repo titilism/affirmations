@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Affirmations</title>
+</head>
+
+<body>
+      <h2 id="quote">Quote Unless one is able to live fully in the present, the future isdfjldskjflksjdfsdlm sdlfkj
+        sdfkjsd sdlkfj fjsdkfjsdlk lkdjfois jfoisdjlk oisdjf fiojfoisjd iofj odij feoijr fne oie ieej rioefneoef fsd
+        fsdoj oijfe fdk f foij dfj ov do dsowe dfo vdso d dfo weods df ojlkdjfo dfjjj oi Unless one is able to live
+        fully in the present, the future isdfjldskjflksjdfsdlm sdlfkj sdfkjsd sdlkfj fjsdkfjsdlk lkdjfois jfoisdjlk
+        oisdjf fiojfoisjd iofj odij feoijr fne oie ieej rioefneoef fsd fsdoj oijfe fdk f foij dfj ov do dsowe dfo vdso d
+        dfo weods df ojlkdjfo dfjjj oi ioj fnoeiej e ijeri ejeijoiefj iejrio eijoiwer ewirj ewjroi eewr ja hoax..</h2>
+      <h3 id="author">Author details..</h3>
+      <button onclick='getQuotes()'>More Quotes</button>
+</body>
+<script>
+  let author = document.getElementById('author');
+  let quote = document.getElementById('quote');
+  function getQuotes() {
+    const p = fetch("https://api.quotable.io/quotes/random?tags=life|love");
+    p.then(response => response.json())
+      .then(data => {
+        author.innerHTML = data[0].author;
+        quote.innerHTML = data[0].content;
+      })
+      .catch(err => { console.error('Error', err) });
+  }
+  // getQuotes();
+</script>
+
+</html>
