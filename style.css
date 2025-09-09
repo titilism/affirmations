@@ -1,0 +1,66 @@
+* {
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+    color: #ffffff;
+    /* font-size: 1.2em; */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20vw;
+    text-align: center;
+    scrollbar-gutter: hidden;
+    /* background: blue; */
+    /* background: linear-gradient(to top right, #9e378b, #12e48c); */
+    background-image: linear-gradient(109.6deg, rgb(166, 64, 221) 21.2%, rgb(102, 165, 235) 74.4%);
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: .9em;
+    border: none;
+    background: white;
+    color: purple;
+}
+
+
+button:active {
+    background: #efefef;
+}
+
+div.container {
+    height: 300px;
+    max-width: 800px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* margin-bottom: 5em; */
+}
+
+div.refresh{
+    position: absolute;
+    bottom: 0;
+}
+div.quote{
+    /* position: absolute; */
+    margin-top: 40px;
+    width: 100%;
+    height:300px;
+}
