@@ -20,6 +20,15 @@
 <script>
   let author = document.getElementById('author');
   let quote = document.getElementById('quote');
+    if (localStorage.getItem('visited') == null) {
+    console.log('first time');
+    window.open('https://api.quotable.io/quotes/random', "_blank");
+    localStorage.setItem('visited', 'yes');
+  } else {
+    console.log('regular user');
+  }
+
+  
   function getQuotes() {
     const p = fetch("https://api.quotable.io/quotes/random?tags=life|love");
     p.then(response => response.json())
