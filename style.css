@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10vw;
+    padding: 10vw 10vh 10vh 15vh;
     text-align: center;
     /* scrollbar-gutter: hidden; */
     scroll-snap-type: none;
