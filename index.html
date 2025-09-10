@@ -22,7 +22,7 @@
   let quote = document.getElementById('quote');
     if (localStorage.getItem('visited') == null) {
     console.log('first time');
-    window.open('https://api.quotable.io/quotes/random', "_blank");
+    window.open('https://api.quotable.io/quotes/random', "_self");
     localStorage.setItem('visited', 'yes');
   } else {
     console.log('regular user');
