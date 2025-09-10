@@ -28,6 +28,8 @@ body {
     /* background: red; */
     /* background: linear-gradient(to top right, #9e378b, #12e48c); */
     background-image: linear-gradient(109.6deg, rgb(166, 64, 221) 21.2%, rgb(102, 165, 235) 74.4%);
+    background-size: cover;
+
 }
 
 button {
