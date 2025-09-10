@@ -22,10 +22,9 @@
   let quote = document.getElementById('quote');
     if (localStorage.getItem('visited') == null) {
     console.log('first time');
+      alert("You're using this site for the first time, You need to allow permission to the API's site!");
     window.open('https://api.quotable.io/quotes/random', "_self");
     localStorage.setItem('visited', 'yes');
-  } else {
-    console.log('regular user');
   }
 
   
