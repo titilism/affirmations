@@ -16,15 +16,22 @@
       <h2 id="quote">Quote Loading..</h2>
       <h3 id="author">Author details..</h3>
       <button onclick='getQuotes()'>More Quotes</button>
+    <a href="https://google.com/" id="olink" target="_blank">open google</a>
+
 </body>
 <script>
   let author = document.getElementById('author');
   let quote = document.getElementById('quote');
-    if (localStorage.getItem('visited') == null) {
+    let olink = document.getElementById('olink');
+
+
+  if (localStorage.getItem('visited') == null) {
     console.log('first time');
-      alert("You're visiting this site for the first time, You need to allow permission to the API's site! And then come back :)");
-    window.open('https://api.quotable.io/quotes/random', "_self");
+     alert("You're visiting this site for the first time, You need to allow permission to the API's site! And then come back :)");
+    olink.click();
     localStorage.setItem('visited', 'yes');
+  } else {
+    console.log('regular user');
   }
 
   
